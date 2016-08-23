@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="keywords" content="专利申请、专利挖掘、无效请求、专利维权、专利培训、专利预警、专利分析、专利交易、数据库定制、专利工具下载、专利问答">
+    <meta name="description" content="知识产权专利申请、提供全方面专利服务">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/header_foot.css">
+    <script src="http://images.cecb2b.com/js/common_new/jquery-1.8/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://images.cecb2b.com/js/common_new/common_top_2014.js"></script>
+    <script src='js/jquery.SuperSlide.2.1.1.js'></script>
+    <title>知识产权专利服务 元器件交易网</title>
+    <body>
+        <!-- ie7error提示 -->
+        <!--[if lte IE 7]>
+        <div id="ie7-warning">您正在使用 Internet Explorer 7，在本页面的显示效果可能有差异。建议您升级到 <a href="http://www.microsoft.com/china/windows/internet-explorer/" target="_blank">Internet Explorer 9</a> 或以下浏览器： <a href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/">Opera</a>
+        </div>
+        <script type="text/javascript">
+            function position_fixed(el, eltop, elleft){ 
+            if(!window.XMLHttpRequest) 
+                window.onscroll = function(){ 
+                el.style.top = (document.documentElement.scrollTop + eltop)+"px"; 
+                el.style.left = (document.documentElement.scrollLeft + elleft)+"px"; 
+                } 
+                else el.style.position = "fixed"; 
+                }
+                position_fixed(document.getElementById("ie7-warning"),0, 0);
+        </script>
+        <![endif]-->
+        <div id="top">
+            <div class="tops">
+                <div class="leftc">
+                    <div class="mobile">
+                        <i class="icon_m"></i>
+                        <a href="http://www.cecb2b.com/zt/wap_dx.shtml" target="_blank">手机版</a>
+                        <i class="line"></i>
+                    </div>
+                    <div class="re_old"><a href="http://www.cecb2b.com/index_2013.shtml">返回旧版首页</a></div>
+                </div>
+                <div class="rightc">
+                    <div class="downlist1">
+                        <span class="s_cs">网站地图</span>
+                    </div>
+                    <div class="downlist1">
+                        <a href="http://meng.cecb2b.com/" class="s_cs">客服中心<i></i></a>
+                        <ul style="display: none;">
+                            <li><a href="http://www.cecb2b.com/help/login.shtml" target="_blank">新手上路</a></li>
+                            <li><a href="http://www.cecb2b.com/help/buy_process.shtml" target="_blank">买家帮助</a></li>
+                            <li><a href="http://www.cecb2b.com/help/supply_process.shtml" target="_blank">卖家帮助</a></li>
+                            <li><a href="http://www.cecb2b.com/help/about_contact.shtml" target="_blank">联系我们</a></li>
+                        </ul>
+                    </div>
+                    <!-- 有内容链接情况下网站导航 -->
+                    <div class="downlist1" id="selluser">
+                        <a href="http://www.cecb2b.com/member/index.do" class="s_cs">会员服务<i></i></a>
+                        <ul>
+                            <li id="ordermanage" style="display:none"><a href="http://www.cecb2b.com/member/index.do?actname=mo_myReceivedOrder_supply.do" target="_blank" rel="nofollow">我的销售订单</a></li>
+                            <li><a href="http://www.cecb2b.com/member/index.do?actname=inquiryReceivedPage.do" target="_blank" rel="nofollow">新收到的询价</a></li>
+                            <li><a href="http://www.cecb2b.com/member/index.do?actname=ic_inventory_manage.jsp" target="_blank" rel="nofollow">上传IC库存</a></li>
+                            <li><a href="http://www.cecb2b.com/member/index.do?actname=nic_inventory_manage.jsp" target="_blank" rel="nofollow">上传非IC库存</a></li>
+                            <li><a href="http://www.cecb2b.com/member/index.do?actname=refreshInvTime.do" target="_blank" rel="nofollow">更新IC库存</a></li>
+                            <li><a href="http://www.cecb2b.com/member/index.do?actname=nIcInvRefresh.do?submenu=3" target="_blank" rel="nofollow">更新非IC库存</a></li>
+                        </ul>
+                    </div>
+                    <div class="mes" id="nologin">
+                        <a href="${ctx}/login.shtml" target="_blank" rel="nofollow">登录</a>&nbsp;&nbsp;<a href="http://www.cecb2b.com/register/registe.jsp" target="_blank" rel="nofollow">免费注册</a>&nbsp;
+                    </div>
+                    <div class="shopCart">
+                        <a href="http://www.cecb2b.com/mall/cart.do" target="_blank" rel="nofollow">
+                    加入购物车
+                    <span></span>
+                    <i id="shopcartnums">0</i>
+                </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 头部logo -->
+        <div class="header">
+            <div class="container">
+                <div class="logo-group">
+                    <h1><a class="logo" href="/" target="_self"><img src="./images/logo.gif" alt="元器件交易网"></a></h1><span class="logo-title"><a target="_self" href="">知识产权专利</a></span></div>
+                    <!-- 搜索 -->
+                <div class="search" id="search"></div>
+                <div class="tj-logo">
+                    <a target="_blank" href="http://tj.cecb2b.com/"><img src="./images/zfzz.gif"></a>
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="silier-wrap">
+            <div class="uislider" id="uislider">
+                <ul class="uislider-content" style="">
+                    <li>
+                        <a href=""><img style="width: 1920px;height: 540px;" src="http://www.appcan.cn/daemon_file/indeximg/indeximg20160329_104059452_1.jpg"></a>
+                    </li>
+                    <li>
+                        <a href=""><img style="width: 1920px;height: 540px;" src="http://images.cecb2b.com/images/zscq/banner1.jpg"></a>
+                    </li>
+                    <li>
+                        <a href=""><img style="width: 1920px;height: 540px;" src="http://www.appcan.cn/daemon_file/indeximg/indeximg20160819_113457912_1.png"></a>
+                    </li>
+                    <li>
+                        <a href=""><img style="width: 1920px;height: 540px;" src="http://www.appcan.cn/daemon_file/indeximg/indeximg20160719_095309662_4.jpg"></a>
+                    </li>
+                </ul>
+                <div class="uislider-pager">
+                    <div class="next">&gt;</div>
+                    <div class="prev">&lt;</div>
+                </div>
+                <ol class="dots">
+                    <li class="dot active">1</li>
+                    <li class="dot">2</li>
+                    <li class="dot">3</li>
+                    <li class="dot">4</li>
+                </ol>
+            </div>
+        </div>
+        <!-- 内容开始 -->
+        <div class="container">
+            <!-- 基础服务 -->
+            <div class="base-service">
+                <div class="service-hd">
+                    <h2>基础服务</h2>
+                </div>
+                <div class="service-bd">
+                    <ul class="base_m0ul">   
+                        <li class="base_li">
+                                <div>
+                                    <p class="b_li01"></p>
+                                    <h1>「专利申请」</h1>
+                                    <a class="q_apply" href="http://patent.cecb2b.com/apply/toApply.shtml?id=37">立即申请</a>
+                                </div>
+                                <div class="hide">
+                                  <h1 class="block_h1">「专利申请」</h1>
+                                   <div class="report_no" id="tail_0">协助发明创造申请人向政府部门提出专利申请</div>
+                                   <a class="q_apply" style="background: #0066FF;color: #fff" href="http://patent.cecb2b.com/apply/toApply.shtml?id=37">立即申请</a>
+                                </div>
+                            </li>
+                        <li class="base_li">
+                                <div>
+                                    <p class="b_li02"></p>
+                                    <h1>「专利挖掘」</h1>
+                                    <a class="q_apply" href="http://patent.cecb2b.com/apply/toApply.shtml?id=38">立即申请</a>
+                                </div>
+                                <div class="hide">
+                                  <h1 class="block_h1">「专利挖掘」</h1>
+                                   <div class="report_no" id="tail_1">提炼出具有专利申请和保护价值的技术创新点和方案</div>
+                                   <a class="q_apply" style="background: #0066FF;color: #fff" href="http://patent.cecb2b.com/apply/toApply.shtml?id=38">立即申请</a>
+                                </div>
+                            </li>
+                        <li class="base_li">
+                                <div>
+                                    <p class="b_li03"></p>
+                                    <h1>「无效请求」</h1>
+                                    <a class="q_apply" href="http://patent.cecb2b.com/apply/toApply.shtml?id=39">立即申请</a>
+                                </div>
+                                <div class="hide">
+                                  <h1 class="block_h1">「无效请求」</h1>
+                                   <div class="report_no" id="tail_2">处理自己产品与他人专利技术有冲突或被人起诉问题</div>
+                                   <a class="q_apply" style="background: #0066FF;color: #fff" href="http://patent.cecb2b.com/apply/toApply.shtml?id=39">立即申请</a>
+                                </div>
+                            </li>
+                        <li class="base_li">
+                                <div>
+                                    <p class="b_li04"></p>
+                                    <h1>「专利维权」</h1>
+                                    <a class="q_apply" href="http://patent.cecb2b.com/apply/toApply.shtml?id=40">立即申请</a>
+                                </div>
+                                <div class="hide">
+                                  <h1 class="block_h1">「专利维权」</h1>
+                                   <div class="report_no" id="tail_3">处理未经专利权人许可实施其专利&nbsp;的行为</div>
+                                   <a class="q_apply" style="background: #0066FF;color: #fff" href="http://patent.cecb2b.com/apply/toApply.shtml?id=40">立即申请</a>
+                                </div>
+                            </li>
+                        <li class="base_li">
+                                <div>
+                                    <p class="b_li05"></p>
+                                    <h1>「专利培训」</h1>
+                                    <a class="q_apply" href="http://patent.cecb2b.com/apply/toApply.shtml?id=41">立即申请</a>
+                                </div>
+                                <div class="hide">
+                                  <h1 class="block_h1">「专利培训」</h1>
+                                   <div class="report_no" id="tail_4">提供高质量、系统化、个性化的知识产权培训服务</div>
+                                   <a class="q_apply" style="background: #0066FF;color: #fff" href="http://patent.cecb2b.com/apply/toApply.shtml?id=41">立即申请</a>
+                                </div>
+                            </li>
+                        <li class="base_li">
+                                <div>
+                                    <p class="b_li06"></p>
+                                    <h1>「专利预警」</h1>
+                                    <a class="q_apply" href="http://patent.cecb2b.com/apply/toApply.shtml?id=42">立即申请</a>
+                                </div>
+                                <div class="hide">
+                                  <h1 class="block_h1">「专利预警」</h1>
+                                   <div class="report_no" id="tail_5">对高风险专利进行全面分析和风险判别</div>
+                                   <a class="q_apply" style="background: #0066FF;color: #fff" href="http://patent.cecb2b.com/apply/toApply.shtml?id=42">立即申请</a>
+                                </div>
+                            </li>
+                        <li class="base_li">
+                                <div>
+                                    <p class="b_li07"></p>
+                                    <h1>「专利分析」</h1>
+                                    <a class="q_apply" href="http://patent.cecb2b.com/apply/toApply.shtml?id=43">立即申请</a>
+                                </div>
+                                <div class="hide">
+                                  <h1 class="block_h1">「专利分析」</h1>
+                                   <div class="report_no" id="tail_6">专利数据进行定量统计分析和智能化数据挖掘分析</div>
+                                   <a class="q_apply" style="background: #0066FF;color: #fff" href="http://patent.cecb2b.com/apply/toApply.shtml?id=43">立即申请</a>
+                                </div>
+                            </li>
+                        <li class="base_li">
+                                <div>
+                                    <p class="b_li08"></p>
+                                    <h1>「专利交易」</h1>
+                                    <a class="q_apply" href="http://patent.cecb2b.com/apply/toApply.shtml?id=44">立即申请</a>
+                                </div>
+                                <div class="hide">
+                                  <h1 class="block_h1">「专利交易」</h1>
+                                   <div class="report_no" id="tail_7">将专利以有偿的方式在不同的经济主体间的转移</div>
+                                   <a class="q_apply" style="background: #0066FF;color: #fff" href="http://patent.cecb2b.com/apply/toApply.shtml?id=44">立即申请</a>
+                                </div>
+                            </li>
+                        <li class="base_li">
+                                <div>
+                                    <p class="b_li09"></p>
+                                    <h1>「数据库定制」</h1>
+                                    <a class="q_apply" href="http://patent.cecb2b.com/apply/toApply.shtml?id=45">立即申请</a>
+                                </div>
+                                <div class="hide">
+                                  <h1 class="block_h1">「数据库定制」</h1>
+                                   <div class="report_no" id="tail_8">从海量专利信息数据中筛选专业性的专利信息数据</div>
+                                   <a class="q_apply" style="background: #0066FF;color: #fff" href="http://patent.cecb2b.com/apply/toApply.shtml?id=45">立即申请</a>
+                                </div>
+                            </li>
+                        <li class="base_li">
+                                <div>
+                                    <p class="b_li010"></p>
+                                    <h1>「更多服务」</h1>
+                                    <a class="q_apply" href="http://patent.cecb2b.com/apply/toApply.shtml?id=46">立即申请</a>
+                                </div>
+                                <div class="hide">
+                                  <h1 class="block_h1">「更多服务」</h1>
+                                   <div class="report_no" id="tail_9">其他专利相关需求，提供全方位知识产权服务</div>
+                                   <a class="q_apply" style="background: #0066FF;color: #fff" href="http://patent.cecb2b.com/apply/toApply.shtml?id=46">立即申请</a>
+                                </div>
+                            </li>
+                        </ul>
+                </div>   
+            </div>
+            <!-- 专利交易 -->
+            <div class="patent-trade">
+                <div class="trade-hd">
+                    <h2>专利交易</h2>  
+                </div> 
+                <div class="trade-bd">
+                    <div class="trade-l">
+                        <div class="teade-list">
+                            <div class="trade-img">
+                                <img src="./images/1.jpg">
+                            </div>
+                            <div class="trade-con">
+                                <h2><a target="_blank" href="">小智丁智能体温计</a></h2>
+                                <p class="text-con"><a href="">通讯接口 CAN＆485； 并机数量 60 个； 通讯告警； 告警与状态 通过 CAN 总线或 485 总线上报监控后台或者面板 LED 显示上报监控后台或者面板 LED 显示</a></p>
+                                <div class="chat-trad">
+                                    参考价： <a href="">登录可见</a><!-- <strong>￥1400</strong> -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><i class="icon-chat"></i>洽谈交易</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teade-list">
+                            <div class="trade-img">
+                                <img src="./images/1.jpg">
+                            </div>
+                            <div class="trade-con">
+                                <h2><a target="_blank" href="">小智丁智能体温计</a></h2>
+                                <p class="text-con"><a href="">通讯接口 CAN＆485； 并机数量 60 个； 通讯告警； 告警与状态 通过 CAN 总线或 485 总线上报监控后台或者面板 LED 显示上报监控后台或者面板 LED 显示</a></p>
+                                <div class="chat-trad">
+                                    参考价： <a href="">登录可见</a><!-- <strong>￥1400</strong> -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><i class="icon-chat"></i>洽谈交易</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trade-r">
+                        <div class="test-list">
+                                <ul>
+                                    <li><a href="" target="_blank">•&nbsp;&nbsp;汽车空调换热器散热性能稳定性检测的装置和方法</a><span>新技术</span></li>
+                                    <li><a href="" target="_blank">•&nbsp;&nbsp;汽车空调换热器散热性能稳定性检测的装置和方法</a><span>新型技术</span></li>
+                                    <li><a href="" target="_blank">•&nbsp;&nbsp;汽车空调换热器散热性能稳定性检测的装置和方法</a><span>新技术</span></li>
+                                    <li><a href="" target="_blank">•&nbsp;&nbsp;汽车空调换热器散热性能稳定性检测的装置和方法</a><span>新技术</span></li>
+                                    <li><a href="" target="_blank">•&nbsp;&nbsp;汽车空调换热器散热性能稳定性检测的装置和方法</a><span>新技术</span></li>
+                                    <li><a href="" target="_blank">•&nbsp;&nbsp;汽车空调换热器散热性能稳定性检测的装置和方法</a><span>新技术</span></li>
+                                    <li><a href="" target="_blank">•&nbsp;&nbsp;汽车空调换热器散热性能稳定性检测的装置和方法</a><span>新技术</span></li>
+                                    <li><a href="" target="_blank">•&nbsp;&nbsp;汽车空调换热器散热性能稳定性检测的装置和方法</a><span>新技术</span></li>
+                                    <li><a href="" target="_blank">•&nbsp;&nbsp;汽车空调换热器散热性能稳定性检测的装置和方法</a><span>新技术</span></li>
+                                    <li><a href="" target="_blank">•&nbsp;&nbsp;汽车空调换热器散热性能稳定性检测的装置和方法</a><span>新技术</span></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 专利工具下载 -->
+            <div class="patent-tool">
+                <div class="tool-hd">
+                    <h2>专利工具下载<a href="" target="_blank" class="lookmore">查看更多</a></h2>  
+                </div>
+                <div class="tool-bd"> 
+                    <ul>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-w.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-w.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-w.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-w.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-w.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-w.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-w.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-w.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-w.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-w.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-x.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-w">
+                                <img src="./images/icon-p.jpg">
+                            </div>
+                            <div class="tool-con">
+                                <h2><a href="">150106关于微生物保藏的说明.doc</a></h2>
+                                <div class="down-cont">
+                                    <p>[专利实施许可合同]</p>
+                                    <a class="download-bt" href="">下载</a>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 专利问答 -->
+            <div class="patent-answer">
+                <div class="answer-hd">
+                    <h2>专利问答<a href="" target="_blank" class="lookmore">查看更多</a></h2>
+                </div>
+                <div class="answer-bd">
+                    <div class="answertips ">
+                        <dl class="ask color999">
+                            <dt><b></b>Q：</dt>
+                            <dd><a class="color999" target="_blank" href="">【参展】怎样报名与参展？</a></dd>
+                        </dl>
+                        <dl class="answer color38">
+                            <dt><b></b>A：</dt>
+                            <dd><a class="" target="_blank" href="">在网站即将举行栏目查阅即将举行的展会，进入展会活动页后，观众观展请点击“观众登记”报名；企业参展请点击平台头文件 注册录帮助中心中发智造L页会展直播厅即将开展精彩回顾正在进。</a></dd>
+                        </dl>
+                    </div>
+                    <div class="answertips ">
+                        <dl class="ask color999 ">
+                            <dt><b></b>Q：</dt>
+                            <dd><a class="color999" target="_blank" href="">【参展】怎样报名与参展？</a></dd>
+                        </dl>
+                        <dl class="answer color38 ">
+                            <dt><b></b>A：</dt>
+                            <dd><a class="" target="_blank" href="">在网站即将举行栏目查阅即将举行的展会，进入展会活动页后，观众观展请点击“观众登记”报名；企业参展请点击平台头文件 注册录帮助中心中发智造L页会展直播厅即将开展精彩回顾正在进。</a></dd>
+                        </dl>
+                    </div>
+                    <div class="answertips ">
+                        <dl class="ask color999 ">
+                            <dt><b></b>Q：</dt>
+                            <dd><a class="color999" target="_blank" href="">【参展】怎样报名与参展？</a></dd>
+                        </dl>
+                        <dl class="answer color38">
+                            <dt><b></b>A：</dt>
+                            <dd><a class="" target="_blank" href="">在网站即将举行栏目查阅即将举行的展会，进入展会活动页后，观众观展请点击“观众登记”报名；企业参展请点击平台头文件 注册录帮助中心中发智造L页会展直播厅即将开展精彩回顾正在进。</a></dd>
+                        </dl>
+                    </div>
+                    <div class="answertips ">
+                        <dl class="ask color999 ">
+                            <dt><b></b>Q：</dt>
+                            <dd><a class="color999" target="_blank" href="">【参展】怎样报名与参展？</a></dd>
+                        </dl>
+                        <dl class="answer color38">
+                            <dt><b></b>A：</dt>
+                            <dd><a class="" target="_blank" href="">在网站即将举行栏目查阅即将举行的展会，进入展会活动页后，观众观展请点击“观众登记”报名；企业参展请点击平台头文件 注册录帮助中心中发智造L页会展直播厅即将开展精彩回顾正在进。</a></dd>
+                        </dl>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="h100"></div>          
+        </div>
+        <!-- 友情链接 -->
+        <div class="foot-about container">            
+                <div class="div_list">
+                    <h3>关于我们</h3>
+                    <ul>
+                        <li><a href="" target="_blank">关于中发智造</a></li>
+                        <li><a href="" target="_blank">联系我们</a></li>
+                        <li><a href="" target="_blank">加入我们</a></li>
+                    </ul>
+                </div>
+                <div class="div_list">
+                    <h3>新手指南</h3>
+                    <ul>
+                        <li><a href="" target="_blank">免费注册</a></li>
+                        <li><a href="" target="_blank">买家入门</a></li>
+                        <li><a href="" target="_blank">卖家入门</a></li>
+                        <li><a href="" target="_blank">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="div_list">
+                    <h3>交易保障</h3>
+                    <ul>
+                        <li><a href="" target="_blank">e投诉</a></li>
+                        <li><a href="" target="_blank">曝光台</a></li>
+                        <li><a href="" target="_blank">e担保</a></li>
+                    </ul>
+                </div>
+                <div class="div_list div_list1">
+                    <h3>生态服务</h3>
+                    <ul>
+                        <li><a href="" target="_blank">工程师社群</a></li>
+                        <li><a href="" target="_blank">科技成果</a></li>
+                        <li><a href="" target="_blank">知识产权专利</a></li>
+                        <li><a href="" target="_blank">解决方案</a></li>
+                        <li><a href="" target="_blank">会展服务</a></li>
+                        <li><a href="" target="_blank">金融服务</a></li>
+                    </ul>
+                </div>
+                <div class="div_list div_wx">
+                    <div class="div-list-l"><img src="./images/wx-ce.jpg"></div>
+                    <div><img src="./images/wx-ph.jpg"></div>
+                </div>
+        </div>
+        
+        <div class="foot-add">
+            <div class="container">
+                <p><a href="">招聘信息</a><a href="">会员服务</a><a href="">广告服务</a><a href="">帮助中心</a><a href="">网站地图</a></p>
+                <p class="copy" style=" position:relative;"> ©2016 元器件交易网 &nbsp;京公网安备 11010802020315号 &nbsp;京ICP证041622号-2 <img width="18" height="22" alt="" src="http://images.cecb2b.com/images/common/icon_footer.gif"> 版权所有
+                    <br>
+                </p>
+            </div>
+        </div>
+        <!-- 右下角弹窗 -->
+<!--         <div id="webim">
+            <dl class="dlstyle">
+                <dt class="dtstyle">
+                    <span id="webimclosebutton" title="点击关闭">关闭</span></dt>
+            </dl>
+            <dl>
+                <dd>
+                    <a href="http://www.itcast.cn/subject/summer/index.shtml?a201" target="_blank" id="webim_link"><img src="http://dfsimg2.hqewimg.com/group1/M00/00/0E/wKhk7letJliAbEqfAABG4ArKTQI540.jpg" style="height: 188px; width: 280px"></a>
+                </dd>
+            </dl>
+        </div> -->
+        <script type="text/javascript" src="js/base.js"></script>
+    </body>
+
+</html>
