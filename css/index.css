@@ -134,6 +134,9 @@
 .silier-wrap{
     height: 540px;
 }
+.silier-wrap .uislider ul li img{
+    width: 100% !important;
+}
 .silier-wrap .uislider {
     position: relative;
     max-width: 1920px;
@@ -430,7 +433,7 @@ margin-top: 20px;
 .patent-answer .answer-hd h2 a.lookmore,.patent-tool .tool-hd h2 a.lookmore{
     font-size: 14px;
     position: absolute;
-    right: 16px;
+    right: 63px;
 }
 .answertips {
     border-bottom: 1px dashed #999;
