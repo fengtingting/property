@@ -29,7 +29,7 @@
                 position_fixed(document.getElementById("ie7-warning"),0, 0);
         </script>
         <![endif]-->
-        <div id="top">
+       <div id="top">
             <div class="tops">
                 <div class="leftc">
                     <div class="mobile">
@@ -40,9 +40,7 @@
                     <div class="re_old"><a href="http://www.cecb2b.com/index_2013.shtml">返回旧版首页</a></div>
                 </div>
                 <div class="rightc">
-                    <div class="downlist1">
-                        <span class="s_cs">网站地图</span>
-                    </div>
+                    <div class="sitemap"><a href="http://www.cecb2b.com/sitemap.shtml" target="_blank">网站地图</a></div>
                     <div class="downlist1">
                         <a href="http://meng.cecb2b.com/" class="s_cs">客服中心<i></i></a>
                         <ul style="display: none;">
@@ -56,12 +54,10 @@
                     <div class="downlist1" id="selluser">
                         <a href="http://www.cecb2b.com/member/index.do" class="s_cs">会员服务<i></i></a>
                         <ul>
-                            <li id="ordermanage" style="display:none"><a href="http://www.cecb2b.com/member/index.do?actname=mo_myReceivedOrder_supply.do" target="_blank" rel="nofollow">我的销售订单</a></li>
-                            <li><a href="http://www.cecb2b.com/member/index.do?actname=inquiryReceivedPage.do" target="_blank" rel="nofollow">新收到的询价</a></li>
-                            <li><a href="http://www.cecb2b.com/member/index.do?actname=ic_inventory_manage.jsp" target="_blank" rel="nofollow">上传IC库存</a></li>
-                            <li><a href="http://www.cecb2b.com/member/index.do?actname=nic_inventory_manage.jsp" target="_blank" rel="nofollow">上传非IC库存</a></li>
-                            <li><a href="http://www.cecb2b.com/member/index.do?actname=refreshInvTime.do" target="_blank" rel="nofollow">更新IC库存</a></li>
-                            <li><a href="http://www.cecb2b.com/member/index.do?actname=nIcInvRefresh.do?submenu=3" target="_blank" rel="nofollow">更新非IC库存</a></li>
+                            <li ><a href="http://www.cecb2b.com/help/member_service.shtml" target="_blank" rel="nofollow">会员服务</a></li>
+                            <li><a href="http://www.cecb2b.com/help/ad_service.shtml" target="_blank" rel="nofollow">广告服务</a></li>
+                            <li><a href="http://www.cecb2b.com/zt/shitirenzheng.shtml" target="_blank" rel="nofollow">增值服务</a></li>
+                            <li><a href="http://www.cecb2b.com/order" target="_blank" rel="nofollow">易配</a></li>
                         </ul>
                     </div>
                     <div class="mes" id="nologin">
